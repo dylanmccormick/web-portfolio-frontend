@@ -1,13 +1,20 @@
+import Main from './components/main/Main';
+import MainOnePage from './components/main/MainOnePage';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import { Theme } from './themes/Theme';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={Theme}>
+      <CssBaseline enableColorScheme>
+        <MainOnePage />
+      </CssBaseline>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,22 @@
+{
+  "singleQuote": true,
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module"
+    }
+  },
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "parser": "babel"
+      }
+    }, 
+    {
+      "files": "*.css",
+      "options": {
+        "perser": "css"
+      }
+    }
+  ]
+}
